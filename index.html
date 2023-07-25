@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     colors: {
-                        // 'primary-color': '#B68C5A',
+                        'primary-color': '#F85559',
                     }
                 }
             }
@@ -32,9 +32,31 @@
 
     </style>
 </head>
-<body>
+<body class="font-lato">
     <!-- header -->
-    <header>
+    <header class="max-w-screen-2xl mx-auto ">
+        <!-- nav section -->
+        <nav class="lg:bg-primary-color md:bg-primary-color flex flex-row justify-between lg:rounded-[600px] md:text-white items-center lg:px-14 px-5 md:py-7 lg:text-white text-black lg:my-12 my-9">
+            <!-- menus  -->
+            <div class="list-none lg:flex justify-evenly gap-7 hidden">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All fruits</a></li>
+            </div>
+            <!-- logo -->
+            <div class="flex items-center gap-2">
+                <img class="lg:h-[60px] h-[25px]" src="./images/logo.png" alt="">
+                <h3 class="lg:text-4xl text-2xl font-bold">Fruit Burst</h3>
+            </div>
+            <!-- search bar -->
+            <div class="relative lg:flex hidden">
+                <input type="search" name="" id="" placeholder="Search here" class="px-7 py-4 rounded-[50px] w-96 text-primary-color focus:outline-none">
+                <button class="block w-7 h-7 text-center text-xl leading-0 absolute top-4 left-[340px] text-primary-color focus:outline-none"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!-- menus for mobile device  -->
+            <a href="" class="lg:hidden text-2xl"><i class="fa-solid fa-bars"></i></a>
+        </nav>
 
     </header>
 
